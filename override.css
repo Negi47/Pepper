@@ -1,5 +1,5 @@
 .header-v2-top-left-image.img{
-    border-radius: 50%;
+    border-radius: 50% !important;
 }
 
 .header-v2{
