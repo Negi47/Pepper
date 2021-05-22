@@ -1,0 +1,13 @@
+.header-v2-top-left-image.img{
+    border-radius: 50%;
+}
+
+.header-v2{
+    background: #4a4848de !important ;
+}
+
+.header-v2-top-left-text-title{
+    font-size: 16px !important;
+    color: white !important;
+    text-transform: capitalize !important;
+}
