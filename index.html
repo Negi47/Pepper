@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Welcome to Pepper Bot</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width; initial-scale=1.0;" name="viewport">
+    <style>
+    
+    </style>
+  </head>
+  
+  <body style="background-image: url(bg.png) !important; background-size: cover !important;">
+  </body>
+  
+  <script type="text/javascript">
+  window.haptikInitSettings = {
+    "business-id": "1",
+    "client-id": "4a0b46f1e2f300da7b7f8c2f77b40fbdc47e7b14",
+    "base-url": "https://staging.hellohaptik.com/",
+    'custom-css': "override.css",
+    "enable-typing-suggestions": true,
+    "ignore-storage": true
+    // "privacy-policy-url": "URL_TO_YOUR_PRIVACY_POLICY_PAGE",
+  };
+  </script>
+  <script type="text/javascript" charset="UTF-8" src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js"></script>
+  <script>
+  // function openChat() {
+  //   HaptikSDK.show()
+  // }
+  document.addEventListener('haptik_sdk', function() {
+          // HaptikSDK is available now
+        HaptikSDK.launchMessage('hi','TRUE', 'FALSE');
+                    HaptikSDK.show()
+  
+    });
+  </script>
+  </html>
