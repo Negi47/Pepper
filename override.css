@@ -11,3 +11,19 @@
     color: white !important;
     text-transform: capitalize !important;
 }
+
+.extended-view
+.composer-wrapper.v2
+.composer.v2{
+    display: none !important;
+}
+
+.extended-view
+.composer-wrapper.v2{
+    padding: unset !important;
+}
+
+.composer-branding{
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
