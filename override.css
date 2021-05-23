@@ -27,3 +27,9 @@
     margin-top: 8px !important;
     margin-bottom: 8px !important;
 }
+
+.haptik-xdk-wrapper
+.haptik-xdk-container
+.xdk-iframe{
+    max-height: 638px !important;
+}
