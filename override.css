@@ -33,3 +33,8 @@
 .xdk-iframe{
     max-height: 638px !important;
 }
+
+.header-v2-top-left-text-credentials{
+    color: white !important;
+    font-weight: 600 !important;
+}
