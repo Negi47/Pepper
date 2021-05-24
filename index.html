@@ -5,78 +5,99 @@
     <meta charset="UTF-8">
     <meta content="width=device-width; initial-scale=1.0;" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+
+      @media only screen and (min-width: 1200px) {
+        .main-info{
+          margin-top: 2rem !important;
+          padding: 0 32rem 1rem 15rem !important;
+        }
+      }
+
+      @media only screen and (min-width: 1800px) {
+        .main-info{
+          margin-top: 8rem !important;
+          padding: 0 19rem 1rem 5rem !important;
+        }
+        body{
+          background-position: bottom !important;
+        }
+      }
       .main-body{
-    text-align: center;
-    } 
-    .main-info{
-      margin-top: 8rem;
-    padding: 0 19rem 1rem 5rem;
-}
-    .heading{
-      margin-top: 4rem;
-    font-size: 42px;
-    font-weight: 600;
-    letter-spacing: .5px;
-    font-family: sans-serif;
-    color: #d8545e;
-    }
-    .text-css{
-      font-size: 18px;
-      font-family: ui-monospace;
-      letter-spacing: 0.5px;
-      /* padding: 2rem; */
-      line-height: 2;
-    }
-    .sub-heading{
-      letter-spacing: 2px;
-    font-size: 15px;
-    }
+        text-align: center;
+      } 
+      *{
+          font-family: KoHo-Regular !important;
+          /* src: url(KoHo-Regular.ttf) !important; */
+      }
+
+      .heading{
+        margin-top: 4rem;
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        font-family: sans-serif;
+        color: #d8545e;
+      }
+      .text-css{
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        margin: 0 !important;
+        line-height: 2;
+      }
+      .sub-heading{
+        letter-spacing: 2px;
+        font-size: 15px;
+      }
+      body{
+        background-size: cover !important; 
+        height: 100vh; 
+        background-repeat: no-repeat; 
+        overflow: hidden !important;
+        background-color: #d8545e4d;
+      }
     </style>
   </head>
 
   
-    <body style="background-image: url(bg12.png) !important; background-size: cover !important; height: 100vh; background-repeat: no-repeat; overflow: hidden !important;background-position: bottom !important;background-color: #d8545e4d;">
+    <body style="background-image: url(bg12.png) !important;" >
       <div class="container">
         <div class="main-body">
-          <h2 class="heading">Pepper</h2><p class="sub-heading">AI solution</p></div>
-        <div class="container main-info">
-          <span class="text-css">We are pleased to welcome a new one of a kind employee by the name of Ms. Pepper into haptik.</span><br/>
-          <span class="text-css" style="white-space: nowrap;">She is our first Virtual Employee who will be helping the team to act on the areas of improvement that surface in our culture. </span><br/>
-          <span class="text-css">She will touch base with you on Special days to Understand & Empathise with you on your journey at Haptik so far. You can open your heart to her without the fear of Judgement.</span><br/>
-          <span class="text-css">Look forward to some amazing and meaningful interactions!!</span>
+          <h2 class="heading">Pepper</h2><p class="sub-heading">The Virtual AI Assistant</p></div>
+          <div class="container main-info">
+            <p class="text-css">We are pleased to welcome a new one of a kind employee by the name of Pepper into <b>Haptik</b>.</p><br/>
+            <p class="text-css">She is our first Virtual Employee who will be helping the team to act on the areas of improvement that surface in our culture. </p><br/>
+            <p class="text-css">She will touch base with you on Special days to <b>Understand & Empathise</b> with you on your journey at Haptik so far. You can open your heart to her without the fear of Judgement.</p><br/>
+            <p class="text-css">Look forward to some amazing and meaningful interactions!!</p>
+          </div>
         </div>
-        
-        
-      </div>
-      
-      
-  </body>
+      </div>  
+    </body>
   
   <script type="text/javascript">
-  window.haptikInitSettings = {
-    "business-id": "3540",
-    "client-id": "4a0b46f1e2f300da7b7f8c2f77b40fbdc47e7b14",
-    "base-url": "https://staging.hellohaptik.com/",
-    'custom-css': "override.css",
-    "enable-typing-suggestions": true,
-    "ignore-storage": true
-    // "privacy-policy-url": "URL_TO_YOUR_PRIVACY_POLICY_PAGE",
-  };
+      window.haptikInitSettings = {
+        "business-id": "3540",
+        "client-id": "4a0b46f1e2f300da7b7f8c2f77b40fbdc47e7b14",
+        "base-url": "https://staging.hellohaptik.com/",
+        'custom-css': "override.css",
+        "enable-typing-suggestions": true,
+        "ignore-storage": true
+        // "privacy-policy-url": "URL_TO_YOUR_PRIVACY_POLICY_PAGE",
+      };
   </script>
   <script type="text/javascript" charset="UTF-8" src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js"></script>
   <script>
-  // function openChat() {
-  //   HaptikSDK.show()
-  // }
-  document.addEventListener('haptik_sdk', function() {
-          // HaptikSDK is available now
-        HaptikSDK.launchMessage('hi','TRUE', 'FALSE');
-                    HaptikSDK.show()
-  
-    });
+    // function openChat() {
+    //   HaptikSDK.show()
+    // }
+    document.addEventListener('haptik_sdk', function() {
+            // HaptikSDK is available now
+          HaptikSDK.launchMessage('hi','TRUE', 'FALSE');
+                      HaptikSDK.show()
+    
+      });
   </script>
   </html>
