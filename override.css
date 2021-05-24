@@ -10,6 +10,9 @@
   .quick-reply-option-text {
       padding: 10px !important;
   }
+  .hsl-bubble-text.primary{
+      color: black !important;
+  }
   .hsl-bubble-text
   /* .message-section-message-row.from-business  */
   {
